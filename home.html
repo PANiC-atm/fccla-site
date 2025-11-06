@@ -6,11 +6,45 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>FCCLA Project</title>
     </head>
+    <style>
+    .rounded-btn {
+      background: #ffffff;               /* white background */
+      color: #000000;                    /* black Arial text */
+      font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+      font-size: 16px;
+      padding: 10px 18px;
+      border: none;                      /* no visible border */
+      border-radius: 12px;               /* rounded corners */
+      cursor: pointer;
+      outline: none;                     /* removes default outline */
+      box-shadow: none;
+      -webkit-tap-highlight-color: transparent; /* mobile highlight off */
+      transition: filter 120ms ease, transform 60ms ease;
+      user-select: none;
+    }
+
+    /* Hover: slightly darker */
+    .rounded-btn:hover {
+      filter: brightness(0.90);
+    }
+
+    /* Active / clicked: darker and a subtle press effect */
+    .rounded-btn:active {
+      filter: brightness(0.75);
+      transform: translateY(1px);
+    }
+
+    /* Remove focus outline for mouse users; note: this also removes keyboard focus ring */
+    .rounded-btn:focus {
+      outline: none;
+      box-shadow: none;
+    }
+  </style>
     <body style="background-color: black;">
         <img src="images/FCCLA Swoop only.jpg" alt="FCCLA Logo" style="width:134px;height:59px;">
         <h1 style="color: lightblue;">Home Page</h1>
         <p style="color: lightblue;">This is a paragraph in the Home Page.</p>
-        <a href=about.html><button>About Page</button></a>
+        <a href=about.html><button class="rounded-btn" type="button">About Page</button></a>
     </body>
     </html>
 
